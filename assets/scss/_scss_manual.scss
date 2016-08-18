@@ -1,0 +1,53 @@
+/*
+
+構成パターン
+=========================================================
+
+プラグイン、モジュール（ミックスイン、関数、変数など）、メインCSS、
+といった大きな括りでまとめた構成手法です。
+
+stylesheets/
+|
+|— vendor/
+|     |— compass/
+|     `...
+|
+|
+|— modules/
+|     |— _base.scss
+|     |— _colors.scss
+|     |— _variables.scss
+|     |— _mixins.scss
+|     |— _functions.scss
+|     `...
+|
+|
+|— partials/
+|     |— _base.scss
+|     |
+|     |— shared/
+|     |     |— _base.scss
+|     |     |— _nav.scss
+|     |     |— _side_bar.scss
+|     |     ...
+|     |
+|     |— books/
+|     |     |— _base.scss
+|     |     |— _book_list.scss
+|     |     |— _recommend.scss
+|     |     ...
+|     |
+|     `— users/
+|           |— _base.scss
+|           |— _index.scss
+|           |— _user_list.scss
+|           |— _thumbnail.scss
+|           ...
+|
+|— screen.scss
+|
+`— application.css
+
+参考：http://qiita.com/natsu871/items/e0aaf2d39dd1ef8185ef
+
+*/
