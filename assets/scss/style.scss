@@ -1,7 +1,13 @@
 @charset "utf-8";
 
-@import "vendor/_sanitize.scss";//reset css
-@import "modules/_var.scss", "modules/_placeholder.scss", "modules/_mixin.scss";
+//@import "vendor/_sanitize.scss";//reset css
+@import "vendor/_normalize.scss";//reset css
+//reset original
+img{
+  max-width: 100%;
+}
+
+@import "modules/_var.scss", "modules/_mixin.scss",  "modules/_placeholder.scss";
 
 /* ==============================
 comment
