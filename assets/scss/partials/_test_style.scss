@@ -1,20 +1,16 @@
-@charset "UTF-8";
-img {
-  max-width: 100%;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+@charset "utf-8";
 
 /* ==============================
 comment
 ============================== */
+
 /* ----- comment ----- */
+
 /* comment */
+
+
 /* アニメーションの試し書き ============================== */
+
 /* animation ://ショートハンドの場合の書き順とデフォルト値。
               animation-name は none,
               animation-duration は 0,            //一回分の時間の長さ
@@ -24,14 +20,15 @@ comment
               animation-direction は normal       //交互に反転再生するか否か
               ;
 */
-.anime-test {
+
+.anime-test{
   color: #fe9999;
   width: 100%;
   height: 100px;
   position: relative;
 }
 
-.anime_01:before {
+.anime_01:before{
   content: " ";
   width: 1em;
   height: 1em;
@@ -66,66 +63,76 @@ comment
     left: 100%;
     transform: rotate(360deg);
   }
-}
+}//@keyframes
+
 /* 試し書き ============================== */
-.a {
+.a{
   color: #a00;
-}
-@media (min-width: 480px) {
-  .a {
+  @media (min-width: 480px) {
     background-color: #a00;
+    .media{
+      text-align: center;
+    }
+    @at-root .aaaa{/* at-rootのみ */
+      display: block;
+    }
+    @at-root (without: media) {
+      .aaaa{/* without media */
+        display: block;
+      }
+    }
+    @at-root (without: all) {
+      .aaaa{/* without all */
+        display: block;
+      }
+    }
+    @at-root (without: rule) {
+      .aaaa{/* without rule */
+        display: block;
+      }
+    }
+  }//@media
+  @at-root .aa{
+    color: #aa0;
+    .aaa{
+      color: #aaa;
+    }
   }
-  .a .media {
-    text-align: center;
-  }
-  .aaaa {
-    /* at-rootのみ */
-    display: block;
-  }
-}
-.a .aaaa {
-  /* without media */
-  display: block;
-}
-.aaaa {
-  /* without all */
-  display: block;
-}
-@media (min-width: 480px) {
-  .aaaa {
-    /* without rule */
-    display: block;
-  }
-}
-.aa {
-  color: #aa0;
-}
-.aa .aaa {
-  color: #aaa;
-}
-.a .b {
-  color: #b00;
-}
-.bb {
-  color: #bb0;
-}
-.a .b .c {
-  color: #c00;
-}
-.a .b .c .cc {
-  color: #cc0;
-}
-.a .b .c .a .b .c-d {
-  color: #d00;
-}
-.dd {
-  color: #dd0;
+  .b{
+    color: #b00;
+    @at-root .bb{
+      color: #bb0;
+    }
+    .c{
+      color: #c00;
+      @at-root & .cc{
+        color: #cc0;
+      }
+      #{&}-d{
+        color: #d00;
+        @at-root .dd{
+          color: #dd0;
+        }
+      }//.ddd
+    }//.ccc
+  }//.bbb
+}//.aaa
+
+//@debug 10px + 20px;
+//@warn "自作エラーメッセージ";
+
+.test{
+  @extend tekitou !optional;
 }
 
+// サンプル用のミックスイン
+@mixin sample-mixin() {
+    /* ... */
+}
+
+@function sum($a: 0, $b: 0) {
+    @return $a + $b;
+}
 .sample {
-  margin: 3px;
-}
-
-.t {
-  color: #99fe00;
+    margin: sum(1px, 2px);  //-> 3px
 }

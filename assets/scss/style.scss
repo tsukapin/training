@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 //@import "vendor/_sanitize.scss";//reset css
-@import "vendor/_normalize.scss";//reset css
+//@import "vendor/_normalize.scss";//reset css
 //reset original
 img{
   max-width: 100%;
@@ -9,10 +9,8 @@ img{
 
 @import "modules/_var.scss", "modules/_mixin.scss",  "modules/_placeholder.scss";
 
-/* ==============================
-comment
-============================== */
-
-/* ----- comment ----- */
-
-/* comment */
+//* 試し書き ============================== */
+@import "partials/_test_style.scss";
+.t{
+  color: #99fe00;
+}
