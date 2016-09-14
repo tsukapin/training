@@ -12,13 +12,13 @@ comment
 /* アニメーションの試し書き ============================== */
 
 /* animation ://ショートハンドの場合の書き順とデフォルト値。
-              animation-name は none,
-              animation-duration は 0,            //一回分の時間の長さ
-              animation-timing-function は ease,  //タイミング・進行割合
-              animation-delay は 0,               //いつ始まるか
-              animation-iteration-count は 1,     //繰り返し回数
-              animation-direction は normal       //交互に反転再生するか否か
-              ;
+  animation-name は none,
+  animation-duration は 0,            //一回分の時間の長さ
+  animation-timing-function は ease,  //タイミング・進行割合
+  animation-delay は 0,               //いつ始まるか
+  animation-iteration-count は 1,     //繰り返し回数
+  animation-direction は normal       //交互に反転再生するか否か
+  ;
 */
 
 .anime-test{

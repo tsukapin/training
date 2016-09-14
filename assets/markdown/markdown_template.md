@@ -54,7 +54,7 @@ __太字__ <br>
 　    print 'hoge'
 　  end
 　end
-　```
+```
 
 ~~~ruby
 　class Hoge

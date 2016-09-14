@@ -1,0 +1,14 @@
+#editorconfigで [ charset = shift_jis ]を指定する場合は要注意！
+#（エディタにより実装が異なるため。参考： https://app.codegrid.net/entry/editorconfig）
+
+#このファイルに変更を加えた場合は、エディタの再起動などが必要。
+#書き方は「 training/assets/markdown/editorconfig_memo.md 」を参照。
+
+root = true
+
+[*.{html,scss,css,js}]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
