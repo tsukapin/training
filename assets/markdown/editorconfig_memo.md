@@ -87,6 +87,14 @@ EditorConfig全般の参考： [チーム開発に効く環境構築術　第1�
 * 概ねこれでOK→（[BEMの考え方を基にしたHTML / CSSのid・classの命名規則](http://qiita.com/kitaro729/items/3189ded5647475bc2ae7)）
 * 上記だと名前が長くなりすぎるので、文字省略のルール（省略する場合は単語の先頭の子音3文字にする）など...他もろもろ
 
-##### その他の細かい記述のルールなど
-* どこにどのタグを使って、スタイルはこう組んでなどの細かいものは、<br>
-gitに移行してプルリクしてソースを確認して...などしないと無理だと思うので割愛。
+##### 細かい記述のルールなど
+* ここ一通り読めばOK→ [ガイドライン・スタイルガイドのまとめ](http://coliss.com/articles/build-websites/operation/work/css-guidelines-for-developers-2015-summer.html)
+* FAオリジナルルールでどこにどのタグを使って、スタイルはこう組んでなどの細かいものは、<br>
+gitに移行してプルリクしてコードレビューして...などしないと無理だと思うので割愛。
+
+##### その他参考になりそうなもの
+* [表記ルール: 企業サイトで使用する「ひらく漢字」「ひらかない漢字」](http://coliss.com/articles/build-websites/operations/notational-convention-for-writing.html)
+* [Google Design](https://design.google.com/)
+* [Material Design（Google）の日本語解説](http://dev.classmethod.jp/smartphone/android/google-material-design/)
+* そのうち導入できればいいな → [スタイルガイドジェネレータを比べてみた](http://qiita.com/shwld/items/d41ba36e9fd2e636c723)
+* [テキスト](url)
