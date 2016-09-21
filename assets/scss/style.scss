@@ -11,6 +11,17 @@ img{
 
 //* 試し書き ============================== */
 @import "partials/_test_style.scss";
-.t{
-  color: #99fe00;
+// style.scss
+//
+// markUp:
+// <p class="test1">テキスト赤</p>
+// <p class="test2">テキスト黒</p>
+//
+// Styleguide 2.0.0
+
+.test1{
+  color: yellow;
+}
+.test2{
+  color: brown;
 }

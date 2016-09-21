@@ -136,3 +136,82 @@ comment
 .sample {
     margin: sum(1px, 2px);  //-> 3px
 }
+
+// Button
+//
+// ボタンです。
+//
+// Markup:
+// <div class="button"><a href="#">Button</a></div>
+//
+// Styleguide 1.0.0
+
+.button {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  & > a {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    &:hover {
+      color: #fff;
+      background: #000;
+    }
+  }
+}
+
+// Heading
+//
+// 見出しです。
+//
+// Markup:
+// <h1 class="heading">見出し</h1>
+//
+// Styleguide 1.2.0
+
+.heading {
+  margin-bottom: 26px;
+  line-height: 1.6;
+  font-size: 32px;
+}
+
+// 色
+//
+// markUp:
+// <p class="red">テキスト赤</p>
+// <p class="black">テキスト黒</p>
+//
+// Styleguide 1.2.1
+
+.red{
+  color: #ff0000;
+}
+.black{
+  color: #000000;
+}
+// 色
+//
+// markUp:
+// <p class="blu">あお</p>
+// <p class="pnk">ピンク</p>
+// <div class="grn">
+//   <p>みどり</p>
+// </div>
+//
+// Styleguide 1.2.2
+.blu{
+  color: blue;
+}
+.pnk{
+  color: pink;
+}
+.grn{
+  color: green;
+}
