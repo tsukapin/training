@@ -37,4 +37,17 @@ name　だけ gulp で
 npm i -D gulp
 ```
 7. プラグイン（パッケージ、モジュール）のインストール
-お好みで。
+お好みで。インストール用のコマンドがいくつかある<br>
+※ 要参考[npm install [--save]と[--save-dev]の使い分け](http://sadakoa.hateblo.jp/entry/2016/06/03/084623)
+例：
+```
+npm install gulp --save-dev
+```
+```
+npm install gulp-sass --save-dev
+```
+```
+npm install sc5-styleguide --save-dev
+```
+8. gulpfile.jsの作成
+package.jsonと同じディレクトリ（=プロジェクトのルート。たぶん）に作成し、必要なものを記述していく。
