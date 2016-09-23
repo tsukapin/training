@@ -26,7 +26,7 @@ gulp.task('sass-watch', ['sass'], function(){
 //sc5-styleguide ===============================
 //参考：http://qiita.com/tatsuyankmura/items/e1ed4c67fec602e6b33d
 gulp.task('styleguide:generate', function() {
-  return gulp.src('assets/scss/*.scss')
+  return gulp.src(['assets/scss/*.scss', 'assets/scss/partials/*.scss'])//グロブパターン使えないので配列で一つずつ渡す
   .pipe(styleguide.generate({
     port: 4000,//デフォルトは3000. http://localhost:4000/
     title: 'styleguide',
@@ -39,7 +39,7 @@ gulp.task('styleguide:generate', function() {
 });
 
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src('assets/scss/*.scss')
+  return gulp.src(['assets/scss/*.scss', 'assets/scss/partials/*.scss'])//グロブパターン使えないので配列で一つずつ渡す
   .pipe(sass({
     errLogToConsole: true
   }))
