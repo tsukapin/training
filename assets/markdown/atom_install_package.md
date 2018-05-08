@@ -3,10 +3,14 @@
 #### sass-autocompile
 SASSファイルを自動的にコンパイル。
 
+#### atom-beautify
+ソースを見やすく整える。
+
 #### autoprefixer
 ベンダープレフィックスを自動付与。
 >スタイルシートの適用したい箇所を選択し、
 cmd + shift + P → autoprefixer と入力 → enter
+>>ショートカットは自分で設定する必要あり。
 
 #### color-picker
 カラーピッカー
