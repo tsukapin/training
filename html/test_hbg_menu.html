@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>タイトル</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/style.css" media="all">
+<!--&#91;if lt IE 9&#93;>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<!&#91;endif&#93;-->
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<style type="text/css">
+body{
+  margin: 0;
+}
+header {
+  padding: 10px 20px;
+}
+nav {
+  padding: 10px 20px;
+}
+main {
+  height: 300vh;
+  padding: 10px 20px;
+}
+footer {
+  padding: 10px 20px;
+}
+/* cssハンバーガーメニュー */
+header {
+  padding:10px;
+  background: skyblue;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+/* transition について
+
+各プロパティの値をスペースで区切って指定。
+transition-propertyの値 （cssプロパティ[background-color,width,heightなど]名）
+transition-durationの値 （変化に掛かる時間）
+transition-timing-functionの値 （変化のタイミング・進行割合）
+      [ease（開始と完了を滑らかにする）]
+      [linear（一定）]
+      [ease-in（ゆっくり始まる）]
+      [ease-out（ゆっくり終わる）]
+      [ease-in-outゆっくり始まってゆっくり終わる）]
+      [cubic-bezier（3次ベジェ曲線のP1とP2を (x1, y1, x2, y2) で指定]
+transition-delayの値 （変化がいつ始まるか[例）3秒後 など]）
+の順で指定する。
+
+複数の種類のCSSプロパティに対してtransition効果を適用する場合には、値のセットをカンマ（ , ）で区切って指定。
+例）背景カラー, 横幅, 縦幅 の場合。
+transition: background-color 1s ease-in-out 0, width 1s linear 0, height 1s linear 0;
+*/
+
+#nav-close {
+  position: fixed;/*全体に広がるように*/
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.00);
+  transform: scale(0);
+  transition-property: background-color, transform;
+  transition-duration: 1s, 0s;
+  transition-timing-function: ease-in-out;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  background: rgba(0, 0, 0, 0.50);
+  transform: scale(1);
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: 1s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="container-bg-01">
+      <div class="container-bg-02">
+        <div class="container-item_box">
+
+
+          <header>
+            <nav id="nav-drawer">
+              <input id="nav-input" type="checkbox" class="nav-unshown">
+              <label id="nav-open" for="nav-input"><span></span></label>
+              <label id="nav-close" for="nav-input"></label>
+              <div id="nav-content">ここに中身を入れる</div>
+            </nav>
+          </header>
+
+          <main>
+            <div class="box">
+              <div class="item">参考：<a href="https://saruwakakun.com/html-css/reference/nav-drawer">CSSだけで簡単！ハンバーガーメニューの作り方（スマホ対応）</a></div>
+            </div>
+            <!-- /.box -->
+          </main>
+
+          <footer>フッター</footer>
+        </div>
+        <!-- /.container-item_box -->
+
+
+      </div>
+      <!-- /.container-bg-02 -->
+    </div>
+    <!-- /.container-bg-01 -->
+  </div><!-- /.container -->
+<!-- SCRIPTS -->
+<!-- Example: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+</body>
+</html>
