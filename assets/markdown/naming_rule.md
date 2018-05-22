@@ -132,17 +132,31 @@ Modifier（修飾語）
 ###### 補足
 さらに以下のようなレイヤーを追加することもできます。
 
->- Variable - プロジェクトで使用されるグローバル変数
-- Function - プロジェクトで使用されるグローバルなfunction
-- Mixin - プロジェクトで使用されるグローバルなmixin
-- Vendor - Normalize.cssやBootstrapのような外部のライブラリやフレームワーク
-- Vendor-extension - Vendorレイヤーの上書き（オーバーライド）
-- Theme - SMACSSのThemeモジュールに該当するテーマによる色の切り替えなど
-- Scope - ブログの投稿用スタイルなどのスコープを作る
-- QA/Test - Quality Assurance（品質保証）、もしくはテストのための一次的なスタイル
-- CSSプリプロセッサ（SassやStylusなど）を使う場合はVariable、Function、Mixinの3つのレイヤーは必ず追加されます。
+>| レイヤー名 | 説明 |
+|:-----------|:------------|
+|Variable|プロジェクトで使用されるグローバル変数|
+|Function|プロジェクトで使用されるグローバルなfunction|
+|Mixin|プロジェクトで使用されるグローバルなmixin|
+|Vendor|Normalize.cssやBootstrapのような外部のライブラリやフレームワーク|
+|Vendor-extension|Vendorレイヤーの上書き（オーバーライド）|
+|Theme|SMACSSのThemeモジュールに該当するテーマによる色の切り替えなど|
+|Scope|ブログの投稿用スタイルなどのスコープを作る|
+|QA/Test|QA/Test - Quality Assurance（品質保証）、もしくはテストのための一次的なスタイル|
+※CSSプリプロセッサ（SassやStylusなど）を使う場合はVariable、Function、Mixinの3つのレイヤーは必ず追加されます。
 
+レイヤーにまとめたモジュールは、そのレイヤーごとに接頭辞（プレフィックス）をつけます。
 
+>| 接頭辞 | 説明 |
+|:-----------|:------------|
+|l-|Layoutレイヤー|
+|c-|Componentレイヤー|
+|p-|Projectレイヤー|
+|u-|Utilityレイヤー|
+|t-|Themeレイアー|
+|s-|Scopeレイヤー|
+|qa- .te-|QA/Testレイヤー|
+|is-|クリックなどのイベントが発生している要素に付与する|
+|js-|JavaScriptから参照される要素（スタイルは当てない）|
 
 
 
