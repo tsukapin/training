@@ -49,6 +49,12 @@ Atom のメニューバーとコンテキストメニュー、設定画面を日
 分割ペインの差分表示ツール。
 >ツリービューのファイル右クリックより diff を行うメニューが表示され、差分を確認
 
+#### sublime-style-column-selection
+矩形選択。
+
+#### atom-csscomb
+CSSのプロパティをソート。
+[使い方](https://1000ch.net/posts/2015/atom-csscomb.html)<br>
 ---
 # 見出し1
 ## 見出し2
