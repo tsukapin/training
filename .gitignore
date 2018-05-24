@@ -2,3 +2,4 @@
 assets/styleguide/output
 node_modules
 assets/css
+assets/scss/css/_normalize.css
