@@ -100,7 +100,6 @@ Modifier（修飾語）
 ├── extension
 │   ├── _variable.scss
 │   ├── _function.scss
-│   ├── _variable.scss
 │   ├── _mixin.scss
 │   └── _placeholder.scss
 ├── foundation
