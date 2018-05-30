@@ -1,0 +1,120 @@
+### bootstrap-4.1.0
+
+#### assets/scss
+| ファイル名 | 翻訳 |
+| :-- | :-- |
+| _ads.scss | 広告 |
+| _algolia.scss | アルゴリア |
+| _anchor.scss | アンカー |
+| _brand.scss | ブランド |
+| _browser-bugs.scss | ブラウザのバグ |
+| _buttons.scss | ボタン |
+| _callouts.scss | コールアウト |
+| _clipboard-js.scss | クリップボード - js |
+| _colors.scss | 色 |
+| _component-examples.scss | コンポーネントの例 |
+| _content.scss | コンテンツ |
+| _examples.scss | 例 |
+| _footer.scss | フッター |
+| _masthead.scss | マストヘッド |
+| _nav.scss | ナビ |
+| _sidebar.scss | サイドバー |
+| _skiplink.scss | スキーリンク |
+| _syntax.scss | 構文 |
+| _variables.scss | 変数 |
+| docs.scss | ドキュメント |
+
+
+| ファイル名 | 翻訳 |
+| :-- | :-- |
+| _alert.scss | アラート |
+| _badge.scss | バッジ |
+| _breadcrumb.scss | ブレッドクラム |
+| _button-group.scss | ボタングループ |
+| _buttons.scss | ボタン |
+| _card.scss | カード |
+| _carousel.scss | カルーセル |
+| _close.scss | 閉じる |
+| _code.scss | コード |
+| _custom-forms.scss | カスタムフォーム |
+| _dropdown.scss | 落ちる |
+| _forms.scss | フォーム |
+| _functions.scss | 機能 |
+| _grid.scss | グリッド |
+| _images.scss | イメージ |
+| _input-group.scss | 入力グループ |
+| _jumbotron.scss | ジャンボトロン |
+| _list-group.scss | リストグループ |
+| _media.scss | メディア |
+| _mixins.scss | ミックスイン |
+| _modal.scss | モーダル |
+| _nav.scss | ナビ |
+| _navbar.scss | navbar |
+| _pagination.scss | ページネーション |
+| _popover.scss | ポップオーバー |
+| _print.scss | 印刷する |
+| _progress.scss | 進捗 |
+| _reboot.scss | リブート |
+| _root.scss | ルート |
+| _tables.scss | テーブル |
+| _tooltip.scss | ツールチップ |
+| _transitions.scss | トランジション |
+| _type.scss | タイプ |
+| _utilities.scss | ユーティリティー |
+| _variables.scss | 変数 |
+| bootstrap-grid.scss | ブートストラップグリッド |
+| bootstrap-reboot.scss | ブートストラップ - リブート |
+| bootstrap.scss | ブートストラップ |
+
+
+| ファイル名 | 翻訳 |
+| :-- | :-- |
+| _alert.scss | アラート |
+| _background-variant.scss | 背景バリアント |
+| _badge.scss | バッジ |
+| _border-radius.scss | ボーダー半径 |
+| _box-shadow.scss | ボックスシャドウ |
+| _breakpoints.scss | ブレークポイント |
+| _buttons.scss | ボタン |
+| _caret.scss | キャレット |
+| _clearfix.scss | clearfix |
+| _float.scss | 浮く |
+| _forms.scss | フォーム |
+| _gradients.scss | 勾配 |
+| _grid-framework.scss | グリッドフレームワーク |
+| _grid.scss | グリッド |
+| _hover.scss | ホバー |
+| _image.scss | 画像 |
+| _list-group.scss | リストグループ |
+| _lists.scss | リスト |
+| _nav-divider.scss | nav-divider |
+| _pagination.scss | ページネーション |
+| _reset-text.scss | リセットテキスト |
+| _resize.scss | サイズを変更する |
+| _screen-reader.scss | スクリーンリーダー |
+| _size.scss | サイズ |
+| _table-row.scss | テーブルロー |
+| _text-emphasis.scss | テキスト強調 |
+| _text-hide.scss | テキスト非表示 |
+| _text-truncate.scss | テキスト切り詰め |
+| _transition.scss | 遷移 |
+| _visibility.scss | 可視性 |
+
+
+| ファイル名 | 翻訳 |
+| :-- | :-- |
+| _align.scss | 整列する |
+| _background.scss | バックグラウンド |
+| _borders.scss | 国境 |
+| _clearfix.scss | clearfix |
+| _display.scss | 表示 |
+| _embed.scss | 埋め込み |
+| _flex.scss | フレックス |
+| _float.scss | 浮く |
+| _position.scss | ポジション |
+| _screenreaders.scss | スクリーンリーダー |
+| _shadows.scss | 影 |
+| _sizing.scss | サイジング |
+| _spacing.scss | 間隔 |
+| _text.scss | テキスト |
+| _visibility.scss | 可視性 |
