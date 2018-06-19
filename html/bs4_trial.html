@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+.bg_blue{ background-color: #007bff;}
+.bg_indigo{ background-color: #6610f2;}
+.bg_purple{ background-color: #6f42c1;}
+.bg_pink{ background-color: #e83e8c;}
+.bg_red{ background-color: #dc3545;}
+.bg_orange{ background-color: #fd7e14;}
+.bg_yellow{ background-color: #ffc107;}
+.bg_green{ background-color: #28a745;}
+.bg_teal{ background-color: #20c997;}
+.bg_cyan{ background-color: #17a2b8;}
+.bg_white{ background-color: #fff;}
+.bg_gray{ background-color: #868e96;}
+.bg_gray_dark{ background-color: #343a40;}
+</style>
+<body>
+
+  <div class="container bg_teal">
+    <div class="row">
+      <div class="col">
+        <p>基本構造は " div.container &gt; div.row &gt; div.col " </p>
+        <a href="https://www.w3schools.com/bootstrap4/default.asp">参考サイト</a>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+  <div class="container bg_cyan">
+    <h2>固定枠（ .container ）</h2>
+    <p>左右に余白あり。</p>
+    <p>width: 数値指定; （メディアクエリで切り替え）</p>
+
+    <div class="row">
+      <p>div.row を使うとこんな感じ。</p>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <div class="container-fluid bg_gray">
+    <h2>流動枠（.container-fluid）</h2>
+    <p>左右に余白なし。</p>
+    <p>width: 100%;</p>
+
+    <div class="row">
+      <p>div.row を使うとこんな感じ。</p>
+    </div>
+  </div>
+  <!-- /.container-fluid -->
+
+  <div class="container bg_cyan">
+    <h2>colいろいろ（ .container ）</h2>
+
+    <div class="row mb-3">
+      <div class="col bg_pink">div.colのサンプル</div>
+      <div class="col bg_red">自動で等幅</div>
+      <div class="col bg_pink">div.colのサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-auto bg_pink">div.col-autoのサンプル</div>
+      <div class="col-auto bg_red">autoは謎</div>
+      <div class="col-auto bg_pink">div.col-autoのサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-6 bg_pink">div.col-numberのサンプル</div>
+      <div class="col-6 bg_red">.col- （超小型デバイス - 画面幅が576px未満）</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-sm bg_pink">div.col-sm のサンプル</div>
+      <div class="col-sm bg_red">.col-sm- （小型デバイス - 画面幅が576px以上）</div>
+      <div class="col-sm bg_pink">div.col-sm のサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md bg_pink">div.col-md のサンプル</div>
+      <div class="col-md bg_red">.col-md- （中程度のデバイス - 768px以上の画面幅）</div>
+      <div class="col-md bg_pink">div.col-md のサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-lg bg_pink">div.col-lg のサンプル</div>
+      <div class="col-lg bg_red">.col-lg- （大型デバイス - 画面幅が992px以上）</div>
+      <div class="col-lg bg_pink">div.col-lg のサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-xl bg_pink">div.col-md のサンプル</div>
+      <div class="col-xl bg_red">.col-xl- （大きなデバイス - 画面幅が1200px以上）</div>
+      <div class="col-xl bg_pink">div.col-md のサンプル</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-1 bg_red">col-1</div>
+      <div class="col-2 bg_pink">col-2</div>
+      <div class="col-3 bg_red">col-3</div>
+      <div class="col-4 bg_pink">col-4</div>
+      <div class="col-5 bg_red">col-5</div>
+      <div class="col-6 bg_pink">col-6</div>
+      <div class="col-7 bg_red">col-7</div>
+      <div class="col-8 bg_pink">col-8</div>
+      <div class="col-9 bg_red">col-9</div>
+      <div class="col-10 bg_pink">col-10</div>
+      <div class="col-11 bg_red">col-11</div>
+      <div class="col-12 bg_pink">col-12</div>
+
+      <div class="col bg_red">サンプル</div>
+
+      <div class="col bg_pink">サンプル</div>
+      <div class="col-auto bg_red">サンプル</div>
+      <div class="col-sm bg_pink">サンプル</div>
+      <div class="col-md bg_red">サンプル</div>
+      <div class="col-lg bg_pink">サンプル</div>
+      <div class="col-xl bg_red">サンプル</div>
+    </div>
+
+  </div>
+  <!-- /.container colいろいろ。 -->
+
+  <div class="container-fluid bg_gray">
+    <h2>流動枠（.container-fluid）</h2>
+    <p>左右に余白なし。</p>
+    <p>width: 100%;</p>
+
+    <div class="row">
+      <div class="col-12">
+        <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+        <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+        <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+        <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+        <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+        <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+      </div>
+      <div class="col-12">
+        <h1>h1 日本語の見出しサンプル (2.5rem = 40px)</h1>
+        <h2>h2 日本語の見出しサンプル。 (2rem = 32px)</h2>
+        <h3>h3 日本語の見出しサンプル。 (1.75rem = 28px)</h3>
+        <h4>h4 日本語の見出しサンプル。 (1.5rem = 24px)</h4>
+        <h5>h5 日本語の見出しサンプル。 (1.25rem = 20px)</h5>
+        <h6>h6 日本語の見出しサンプル。 (1rem = 16px)</h6>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container-fluid -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <main class="bd-masthead" id="content" role="main">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-6 mx-auto col-md-6 order-md-2">
+                <img class="img-fluid mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/bootstrap-stack.png" alt="" width="1024" height="860">
+              </div>
+              <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+                <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
+                <p class="lead">
+                  Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+                </p>
+                <p class="lead mb-4">
+                  Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+                </p>
+                <div class="d-flex flex-column flex-md-row lead mb-3">
+                  <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
+                  <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
+                </div>
+                <p class="text-muted mb-0">
+                  Currently v{{ site.current_version }}
+                </p>
+              </div>
+            </div>
+            {% include ads.html %}
+          </div>
+        </main>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container-fluid -->
+
+</body>
+</html>
